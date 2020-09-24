@@ -21,8 +21,19 @@ public class Main {
 
     private static int addArguments(String[] args) {
         int sum = 0;
-        for (String arg : args) {
-            sum += Integer.parseInt(arg);
+
+        if(args[0].equals("-"))
+        {
+            for (int counter = 1; counter < args.length; counter++) {
+                sum -= Integer.parseInt(args[counter]);
+            }
+        }
+        else
+        {
+            for (String arg : args) 
+            {
+                sum += Integer.parseInt(arg);
+            }
         }
         return sum;
     }
