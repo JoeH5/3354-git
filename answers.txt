@@ -1,0 +1,13 @@
+(a) 7 commits total. 2 commits by me. 5 commits by the original author.
+
+(b) Jan 24, 2017
+
+(c) Git log displays commited snapshots which allows you to view, filter, and search specific changes of the project history. Git status lets you view the working directory and the staging area and provides the status of comparison with the branch origin.
+
+(d) Untracked files is every file that was not present in the previous snapshot of the repository. Unstaged files are files that exist in the working directory but haven't been recorded into version history. 
+Untracked files do not exist in Git. Unstaged files are in Git but not marked for commit.
+
+(e) Git reset is specific to updating the index and moving the HEAD. 
+Git checkout is specific to updating the working tree to the index. It will only update the HEAD if you checkout a branch. In other words, checkout will update the files in the working directory to match the version stored in the branch, records all new commits on the branch.
+
+(f) Git pull will only work with committed changes. It will not deal with the working directory and any modifications will not be touched unless first committed. There are scenarios when it will work such as if you have no conflicting changes, or the files you've touched locally have no overlap with the changed files you need to pull from remote.
